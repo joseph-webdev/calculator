@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="row d-flex justify-content-center bg-dark" style="height: 100vh;">
+        <div class="col-4 border border-3 border-primary h-2 calculator-box rounded-3 bg-white" style="height: fit-content; transform: translateY(calc(50vh - 50%))">
+            <div class="row-10 alert-light m-3 text-right border border-3 p-1">
+                <p style="margin-bottom: 0; text-align: right;" id="history" class="h-100 col-12"></p>
+                <h1 style="margin-bottom: 0; text-align: right;" class="h1 text-dark" id="display">0</h1>
+            </div>
+            <div class="row mx-2 p-2" id="buttons">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
